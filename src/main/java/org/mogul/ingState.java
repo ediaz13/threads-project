@@ -9,6 +9,7 @@ public class ingState implements Runnable {
     public void run() {
         Thread t2 = new Thread(new DemoingStateRunnable());
         t2.start();
+        System.out.println(ingState.t1.getState());
         try {
             t2.join();
         } catch (InterruptedException e) {

@@ -1,6 +1,6 @@
 package org.mogul;
 
-public class Main_Blocked {
+public class BlockedState {
     public static void main(String[] args) throws
             InterruptedException {
         Thread t1 = new Thread(new DemoBlockedRunnable());
